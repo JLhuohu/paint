@@ -3,7 +3,7 @@ var BrushViewer = (function () {
 
 
     function makePerspectiveMatrix (out, fovy, aspect, near, far) {
-        var f = 1.0 / Math.tan(fovy / 2),
+        var f = 1.0 / Math.tan(fovy / 3),
             nf = 1 / (near - far);
 
         out[0] = f / aspect;
